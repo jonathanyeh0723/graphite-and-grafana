@@ -72,3 +72,32 @@ $ ls
 statsd_0.9.0-1_all.deb          statsd_0.9.0-1_amd64.changes  statsd_0.9.0-1.tar.gz
 statsd  statsd_0.9.0-1_amd64.buildinfo  statsd_0.9.0-1.dsc
 ```
+
+Type this command to build:
+
+```
+$ sudo dpkg -i statsd_0.9.0-1_all.deb
+```
+
+We should be able to see the following, if successful:
+
+```
+gyp ERR! node -v v10.19.0
+gyp ERR! node-gyp -v v6.1.0
+gyp ERR! not ok 
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: modern-syslog@1.2.0 (node_modules/modern-syslog):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: modern-syslog@1.2.0 install: `node-gyp rebuild`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+
+added 8 packages from 13 contributors and audited 252 packages in 7.873s
+found 5 vulnerabilities (3 moderate, 2 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+dpkg-statoverride: warning: --update given but /var/run/statsd does not exist
+Available systemd services are disabled by default:
+ * statsd
+ * statsd-proxy
+
+To enable one of them use:
+  systemctl enable NAME
+```
