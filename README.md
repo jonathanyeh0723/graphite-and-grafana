@@ -11,4 +11,6 @@ What is StatsD? It is a network daemon that aggregates and summarizes applicatio
 
 Step1: To download package information from all configured sources. It is useful to get info on an updated version of packages or their dependencies.
 
-```$ sudo apt-get -y update```
+```
+$ sudo apt-get -y update
+```
