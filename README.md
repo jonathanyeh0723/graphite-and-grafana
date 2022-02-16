@@ -60,3 +60,15 @@ LINE: statsd (0.8.6-1) unstable; urgency=low
 dpkg-source: warning: statsd/debian/changelog(l11): found end of file where expected more change data or trailer
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
 ```
+
+Step5: OK. Now we'll change the directory up just one to the directory that the deb was built in. Find the target file we want and build it.
+
+```
+$ cd ..
+$ ls
+```
+
+```
+statsd_0.9.0-1_all.deb          statsd_0.9.0-1_amd64.changes  statsd_0.9.0-1.tar.gz
+statsd  statsd_0.9.0-1_amd64.buildinfo  statsd_0.9.0-1.dsc
+```
