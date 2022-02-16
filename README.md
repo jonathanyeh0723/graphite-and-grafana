@@ -14,3 +14,9 @@ Step1: To download package information from all configured sources. It is useful
 ```
 $ sudo apt-get -y update
 ```
+
+Step2: After that, we'll install the dependencies that we require. These are Git, Node JS, devscripts, debhelper, NPM, and dh-systemd.
+
+```
+$ sudo apt-get -y install git nodejs devscripts debhelper npm dh-systemd
+```
