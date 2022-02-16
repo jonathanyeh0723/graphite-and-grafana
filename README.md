@@ -1,5 +1,5 @@
 # graphite-and-grafana
-Get better insights into your back-end performance.
+Get better insights into your back-end performance. StatsD, Graphite, and Grafana are three popular open-source tools used to aggregate and visualize metrics about systems and applications.
 
 ## Metrics Gathering with StatsD
 To provide an overview of the StatsD client server service and explain how it works and how metrics are ingested.
