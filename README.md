@@ -20,3 +20,22 @@ Step2: After that, we'll install the dependencies that we require. These are Git
 ```
 $ sudo apt-get -y install git nodejs devscripts debhelper npm dh-systemd
 ```
+
+Step3: Once all that has been installed, we'll further clone the StatsD repository and get ready to build a package.
+
+```
+$ cd tmp/
+$ git clone https://github.com/etsy/statsd.git
+```
+
+We should be able to see the below message, if successful:
+```
+Cloning into 'statsd'...
+remote: Enumerating objects: 3550, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 3550 (delta 0), reused 0 (delta 0), pack-reused 3541
+Receiving objects: 100% (3550/3550), 816.23 KiB | 7.16 MiB/s, done.
+Resolving deltas: 100% (1988/1988), done.
+```
+
