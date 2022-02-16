@@ -39,3 +39,24 @@ Receiving objects: 100% (3550/3550), 816.23 KiB | 7.16 MiB/s, done.
 Resolving deltas: 100% (1988/1988), done.
 ```
 
+Step4: Now that's cloned, we can change directories into the directory we just cloned. And we're ready to build a deb.
+
+```
+$ cd statsd/
+$ sudo dpkg-buildpackage
+```
+
+Once it's successful, we should be able to see the following output:
+```
+...
+LINE: statsd (0.8.5-1) unstable; urgency=low
+dpkg-genchanges: warning:     debian/changelog(l19): found end of file where expected more change data or trailer
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-source: warning: statsd/debian/changelog(l9): badly formatted trailer line
+LINE:  -- Elliot Blackburn <elliot@elliotblackburn.com>   Thu, 27 Aug 2020 15:30:29 +0000
+dpkg-source: warning: statsd/debian/changelog(l11): found start of entry where expected more change data or trailer
+LINE: statsd (0.8.6-1) unstable; urgency=low
+dpkg-source: warning: statsd/debian/changelog(l11): found end of file where expected more change data or trailer
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+```
