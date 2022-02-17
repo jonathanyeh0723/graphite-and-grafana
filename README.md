@@ -102,7 +102,9 @@ To enable one of them use:
   systemctl enable NAME
 ```
 
-Okay, and even though there was an error, StatsD actually has been installed. We can verify by running `$ sudo systemctl status statsd.service`
+Okay, and even though there was an error, StatsD actually has been installed. 
+
+We can verify by running `sudo systemctl status statsd.service`
 ```
 ● statsd.service - Network daemon for aggregating statistics
      Loaded: loaded (/lib/systemd/system/statsd.service; disabled; vendor preset: enabled)
