@@ -1,5 +1,10 @@
 # graphite-and-grafana
-Get better insights into your back-end performance. StatsD, Graphite, and Grafana are three popular open-source tools used to aggregate and visualize metrics about systems and applications.
+Get better insights into your back-end performance. StatsD, Graphite, and Grafana are three popular open-source tools used to aggregate and visualize metrics about systems and applications. We'll be able to use them in combination to stay on top of outages, diagnose issues related to database and server performance, and optimize your user experience.
+
+Specifically, we'll have the ability to:
+ - gather app-specific metrics with StatsD
+ - store those metrics efficiently with Graphite
+ - Monitor and beautifully visualize this information with Grafana
 
 ## Metrics Gathering with StatsD
 To provide an overview of the StatsD client server service and explain how it works and how metrics are ingested.
@@ -111,3 +116,5 @@ We can verify by running `sudo systemctl status statsd.service`
      Active: inactive (dead)
        Docs: https://github.com/etsy/statsd/
 ```
+
+
