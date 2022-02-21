@@ -117,4 +117,8 @@ We can verify by running `sudo systemctl status statsd.service`
        Docs: https://github.com/etsy/statsd/
 ```
 
+### Configuring StatsD
 
+Now that our service is installed, we can configure it to run in debug mode and then send it some test metrics. 
+
+Start by opening the configure file at `/etc/statsd/local/localConfig.js` and change it to run debug mode.
