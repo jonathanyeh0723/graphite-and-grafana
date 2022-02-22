@@ -126,3 +126,12 @@ So first we'll type `sudo -s` to run shell as the target user. And then we will 
 ```
 $ vim /etc/statsd/localConfig.js
 ```
+
+We should be able to see the following listed:
+```
+{
+  graphitePort: 2003
+, graphiteHost: "localhost"
+, port: 8125
+}
+```
