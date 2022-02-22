@@ -135,3 +135,5 @@ We should be able to see the following listed:
 , port: 8125
 }
 ```
+
+Now we'll comment out the `graphitePort` and `graphiteHost`, since we don't have graphite configured yet.
