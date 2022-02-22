@@ -122,3 +122,9 @@ We can verify by running `sudo systemctl status statsd.service`
 Now that our service is installed, we can configure it to run in debug mode and then send it some test metrics. 
 
 Start by opening the configure file at `/etc/statsd/local/localConfig.js` and change it to run debug mode.
+
+So first we'll type `sudo -s` to run shell as the target user. And then we will continue to open the config file.
+
+```
+$ vim /etc/statsd/localConfig.js
+```
