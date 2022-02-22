@@ -136,4 +136,37 @@ We should be able to see the following listed:
 }
 ```
 
-Now we'll comment out the `graphitePort` and `graphiteHost`, since we don't have graphite configured yet.
+Now we'll comment out the `graphitePort` and `graphiteHost`, since we don't have graphite configured yet. After that, add a new line with `debug:"True"` key-value pair.
+
+```
+{
+  //graphitePort: 2003
+//, graphiteHost: "localhost"
+  debug: "True"
+, port: 8125
+}
+```
+
+Okay. Now we can start the service, and check out the status.
+
+```
+$
+```
+
+```
+ statsd.service - Network daemon for aggregating statistics
+     Loaded: loaded (/lib/systemd/system/statsd.service; disabled; vendor preset: enabled)
+     Active: active (running) since Tue 2022-02-22 15:05:58 CST; 3s ago
+       Docs: https://github.com/etsy/statsd/
+   Main PID: 5360 (statsd /etc/sta)
+      Tasks: 11 (limit: 4632)
+     Memory: 10.3M
+     CGroup: /system.slice/statsd.service
+             └─5360 statsd /etc/statsd/localConfig.js
+
+ 二  22 15:05:58 openvino-VirtualBox systemd[1]: Started Network daemon for aggregating statistics.
+ 二  22 15:05:58 openvino-VirtualBox nodejs[5360]: 22 Feb 15:05:58 - [5360] reading config file: /etc/statsd/localConfig.js
+ 二  22 15:05:58 openvino-VirtualBox nodejs[5360]: 22 Feb 15:05:58 - DEBUG: Loading server: ./servers/udp
+ 二  22 15:05:58 openvino-VirtualBox nodejs[5360]: 22 Feb 15:05:58 - server is up INFO
+ 二  22 15:05:58 openvino-VirtualBox nodejs[5360]: 22 Feb 15:05:58 - DEBUG: Loading backend: ./backends/graphite
+```
