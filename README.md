@@ -174,4 +174,8 @@ We should be able to see the service is running shown from the console.
  二  22 15:05:58 openvino-VirtualBox nodejs[5360]: 22 Feb 15:05:58 - DEBUG: Loading backend: ./backends/graphite
 ```
 
-Once we start the service backup, we can send test metrics to it. So to send a test metric, we can input `echo "foo:1|c" | nc -u -w0 127.0.0.1 8125`
+Once we start the service backup, we can send test metrics to it. So to send a test metric, we can input 
+
+```
+$ echo "foo:1|c" | nc -u -w0 127.0.0.1 8125
+```
