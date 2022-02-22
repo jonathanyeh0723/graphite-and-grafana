@@ -150,8 +150,11 @@ Now we'll comment out the `graphitePort` and `graphiteHost`, since we don't have
 Okay. Now we can start the service, and check out the status.
 
 ```
-$
+$ systemctl start statsd.service
+$ systemctl status statsd.service
 ```
+
+We should be able to see the service is running shown from the console.
 
 ```
  statsd.service - Network daemon for aggregating statistics
