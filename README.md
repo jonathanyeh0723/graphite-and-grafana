@@ -182,7 +182,7 @@ $ echo "foo:1|c" | nc -u -w0 127.0.0.1 8125
 
 ### Types of Metrics
 
-As we knew, the StatsD
+As we knew, the StatsD server implements a protocol where data is understood in the form of the following:
 
 ```
 <bucket>:<value>|<metric_type>
