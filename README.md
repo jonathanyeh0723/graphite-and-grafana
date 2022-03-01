@@ -179,3 +179,11 @@ Once we start the service backup, we can send test metrics to it. So to send a t
 ```
 $ echo "foo:1|c" | nc -u -w0 127.0.0.1 8125
 ```
+
+### Types of Metrics
+
+As we knew, the StatsD
+
+```
+<bucket>:<value>|<metric_type>
+```
