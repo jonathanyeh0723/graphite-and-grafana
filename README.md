@@ -187,3 +187,9 @@ As we knew, the StatsD server implements a protocol where data is understood in 
 ```
 <bucket>:<value>|<metric_type>
 ```
+
+StatsD supports several types of metrics, including:
+ - Counters
+ - Timers
+ - Gauges
+ - Sets
