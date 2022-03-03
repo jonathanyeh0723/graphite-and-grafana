@@ -188,6 +188,14 @@ As we knew, the StatsD server implements a protocol where data is understood in 
 <bucket>:<value>|<metric_type>
 ```
 
+Take a look to an example below.
+
+```
+email_sending.emails.sent:300|c
+```
+
+In this case, **email_sending** is a `bucket`, **300** is a `value`, and `c` is a counter.
+
 StatsD supports several types of metrics, including:
  - Counters
  - Timers
