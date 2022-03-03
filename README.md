@@ -194,7 +194,7 @@ Take a look to an example below.
 email_sending.emails.sent:300|c
 ```
 
-In this case, **email_sending** is a `bucket`, **300** is a `value`, and `c` is a counter.
+In this case, **email_sending** is a `bucket`, **300** is a `value`, and **c** is a counter `metric type`.
 
 StatsD supports several types of metrics, including:
  - Counters
