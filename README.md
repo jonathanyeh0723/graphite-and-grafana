@@ -203,4 +203,5 @@ StatsD supports several types of metrics, including:
  - Sets
 
 Counters: Every time a counter metric is received, the value of the metric's bucket is incremented or decremented according to the metrics provided value.
+
 Timers: Every time a timer metric is received it is considered a representation of how long a bucket took to complete. For instance, `email_sending.emails.sent:560|ms`
