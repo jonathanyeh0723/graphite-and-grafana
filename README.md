@@ -208,4 +208,4 @@ Timers: Every time a timer metric is received it is considered a representation 
 
 Gauges: Gauges are arbitrary values to be recorded and unlike other metrics are not automatically reset or recalculated on a per-flush basis. If a gauge is not updated at the next flush, it will send the previous value. For example, `email_sending.render.num_recommendations:5|g`. It is also possible to add a sign to the gauhe value which will change the value rather than set it. Let's look an example, we can show that the number of recommendations has been changed and set to one recommendation via the expression `email_sending.render.num_recommendations:+1|g`.
 
-
+Sampling: It is also possible to sample metrics instead of sending data to the StatsD server every time
